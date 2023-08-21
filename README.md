@@ -1,7 +1,8 @@
-# WebEdify
+# WebEdufy
+
 Yo..!! 
 
-<p><u>WebEdify</u></p>
+
 
 Project: Online Learning Platform  (WIP)
 
