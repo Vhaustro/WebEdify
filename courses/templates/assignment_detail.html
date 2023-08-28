@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Assignment Detail</h1>
+    <h2>{{ assignment.title }}</h2>
+    <p>{{ assignment.description }}</p>
+    <p>Due Date: {{ assignment.due_date }}</p>
+
+{% endblock %}
