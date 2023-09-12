@@ -19,7 +19,7 @@ Concepts within this application:
 - Role-based access control
 - Form handling and validation
 - Automated emails
-- Pagination (With implementation, it makes my side of sorting out large chunks of data. Like splitting Ugali to share among people)
+- Pagination 
 - RESTful API design
 - Testing and debugging
 - Deployment
