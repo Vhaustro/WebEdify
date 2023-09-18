@@ -1,12 +1,14 @@
-{% extends, 'base.html'%}
-
-{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course List</title>
+</head>
+<body>
     <h1>Course List</h1>
     <ul>
         {% for course in courses %}
-        <li><a href="{%url 'assignment_detail' 'assignment_id=course' %}">{{ course.title }}</a></li>
+            <li>{{ course.title }}</li>
         {% endfor %}
     </ul>
-
-{% endblock %}
-
+</body>
+</html>

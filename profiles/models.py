@@ -1,9 +1,8 @@
-# profiles/forms.py
-from django import forms
-from django.contrib.auth.forms import UserCreationForm
-from .models import UserProfile
+from django.db import models
+from django.contrib.auth.models import AbstractUser
 
-class UserRegistrationForm(UserCreationForm):
+
+class AbstractUser(Registration):
     email = forms.EmailField()
 
     class Meta:
