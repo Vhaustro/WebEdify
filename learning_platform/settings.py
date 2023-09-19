@@ -1,5 +1,7 @@
 from pathlib import Path
 from courses import views
+import os
+
 
 
 AUTHENTICATION_BACKENDS = [
@@ -31,7 +33,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'courses',  # Your app
+    'courses',
+    'profiles',  # Your app
 ]
 
 STATIC_URL = '/static/'

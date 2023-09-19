@@ -2,9 +2,14 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 
-class AbstractUser(Registration):
-    email = forms.EmailField()
+class UserProfile(AbstractUser):
+    bio = models.TextField(max_length=500, blank=True)
+    profile_picture = models.ImageField(upload_to='profile_pictures/', blank=True, null=True)
 
     class Meta:
-        model = UserProfile
+        model = AbstractUser
         fields = ['username', 'email', 'password1', 'password2']
+
+        def __str__(self):
+            return self.username
+        

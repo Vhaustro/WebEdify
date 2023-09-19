@@ -4,6 +4,3 @@ class CoursesConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'Courses'
 
-class AssignmentConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'Assignment'

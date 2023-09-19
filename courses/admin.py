@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Course, Assignment, Submission
+from .models import Courses, Assignments, Submission
 
 class AssignmentAdmin(admin.ModelAdmin):
     list_display = ('title', 'course', 'deadline')
@@ -23,7 +23,7 @@ class CourseAdmin(admin.ModelAdmin):
     ordering = ('-enrollment_start_date')
 
 
-admin.site.register(Course, CourseAdmin)
-admin.site.register(Assignment, AssignmentAdmin)
+admin.site.register(Courses, CourseAdmin)
+admin.site.register(Assignments, AssignmentAdmin)
 admin.site.register(Submission, SubmissionAdmin)
 
